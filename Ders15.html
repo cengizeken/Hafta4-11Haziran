@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar ve Form Olayları-3</title>
+    <script>
+        async function FillBarDoldur(x){
+            document.getElementById("myFillBar").value =0;
+            for(var i=0;i<100;i++)
+            {
+                document.getElementById("myFillBar").value = i;
+                await sleep(5);
+            }
+        }
+        function sleep(ms){
+            return new Promise(resolve =>setTimeout(resolve,ms));
+        }
+        function GetSaatDakika(){
+            var dateTime = new Date();
+            var saat = dateTime.getHours();
+            var dakika = dateTime.getMinutes();
+            var saniye = dateTime.getSeconds();
+            document.getElementById("saat").innerHTML = saat;
+            document.getElementById("dakika").innerHTML = dakika;
+        }
+    </script>
+</head>
+<body onload="GetSaatDakika()">
+    <meter id="myFillBar" value="20" min="0" max="100"></meter>
+    <button type="button" onclick="FillBarDoldur()">Doldur</button>
+    <form oninput="myRangeOutput.value = myRange.value">
+        <label for="">Hobilerimiz</label><br><br><br>
+        <input type="checkbox" name="hobi" value="Yüzme"> Yüzme</input>
+        <input type="checkbox" name="hobi" value="Koşma"> Koşma</input>
+        <input type="checkbox" name="hobi" value="Atabinme" checked> At Binme</input>
+        <input type="checkbox" name="hobi" value="Uyuma"> Uyuma</input><br><br><br>
+        <label for="">Numeric Up/Down</label>
+        <input type="number" value="2" max="12" min="-10"></input><br><br><br>
+        <label for="">Sayı Aralığı</label>
+        <input type="Range" value="2" max="12" min="-10" name="myRange"></input>
+        <input type="output" name="myRangeOutput">
+        <br><br><br>
+        <label>email</label>
+        <input type="email"></input><br><br><br>
+        <label>Date Time</label>
+        <input type="date"></input><br><br><br>
+        <label>Month</label>
+        <input type="month"></input><br><br><br>
+        <label>Hafta</label>
+        <input type="week"></input><br><br><br>
+        <label>Saat Dakika</label>
+        <input type="time"></input><br><br><br>
+        <label>Yerel Zaman</label>
+        <input type="datetime-local"></input><br><br><br>
+        <label>Gönder</label>
+        <input type="submit"></input><br><br><br>
+        <label>Sıfırla</label>
+        <input type="text">
+        <input type="reset"></input><br><br><br>
+
+        <label>İpucu Gösterme</label>
+        <input type="text" title="Bu alana metin giriniz"></input><br><br><br>
+        <div onload="GetSaatDakika()">
+            <p>saat şu anda <time><span id="saat"></span>:<span id="dakika"></span> </time></p>
+        </div>
+    </form>
+</body>
+</html>

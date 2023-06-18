@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mevsimler-aylar{ border:3px solid red;}
+        td,tr{border: 1px solid silver;}
+        /*th{background-color: red; color:white;}*/
+        thead{background-color: black; color: red;}
+        tbody{background-color: silver;}
+        tfoot{color: gray;background-color: white;font-size: 9px;}
+    </style>
+</head>
+<body>
+    <table id = "mevsimler-aylar" cellspacing="5px"> 
+        <col style="width:40%;">
+        <col style="width:20%;">
+        <col style="width:20%;">
+        <col style="width:20%;">
+        <thead>
+            <th>Mevsimler</th>
+            <th>1.Ay</th>
+            <th>2.Ay</th>
+            <th>3.Ay</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>KIŞ</td>
+            <td>Aralık</td>
+            <td>Ocak</td>
+            <td>Şubat</td>
+        </tr>
+        <tr>
+            <td>İLKBAHAR</td>
+            <td>Mart</td>
+            <td>Nisan</td>
+            <td>Mayıs</td>
+        </tr>
+        <tr>
+            <td>YAZ</td>
+            <td>Haziran</td>
+            <td>Temmuz</td>
+            <td>Ağustos</td>
+        </tr>
+        <tr>
+            <td>SONBAHAR</td>
+            <td>Eylül</td>
+            <td>Ekim</td>
+            <td>Kasım</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td colspan="4">u table Cengiz EKEN e aittir</td>
+    </tfoot>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="2">C</td>
+        </tr>
+        <tr>
+            <td rowspan="2">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+    </table>
+</body>
+</html>

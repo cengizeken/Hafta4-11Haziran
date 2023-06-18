@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function aktifYap(x){
+            document.getElementById("myButton").disabled = false;       
+        }
+        function pasifYap(x){
+            document.getElementById("myButton").disabled = true;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="myButton">Tıkla</button>
+    <button type="button" onclick="aktifYap();">Aktif Yap</button>
+    <button type="button" onclick="pasifYap();">Pasif Yap</button><br><br><br><br>
+    <form action="">
+        <input type="text" placeholder="Adınızı Giriniz"></input><br><br>
+        <input type="text" placeholder="Soyadınızı Giriniz"></input><br><br>
+        <textarea name="" id="" cols="30" rows="10" type = "text" placeholder="Mesajını Giriniz"></textarea><br><br>
+        
+        <button type="submit" value="submit">Gönder</button>
+        <button type="reset" value="reset">Sil</button>
+    </form>
+</body>
+</html>
