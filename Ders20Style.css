@@ -1,0 +1,17 @@
+#kutu{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid gray;
+}
+#kapat{
+    float: right;
+}
+.grup{
+    display: inline/*block*/;
+    color: red;
+    border: 2px solid navy;
+}
+img {
+    height: 10px;/*300*/
+    display: inline;
+}
