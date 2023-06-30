@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kapsayici{
+    width: 75%;
+    height: 500px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.eleman{
+    background-color: silver;
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+}

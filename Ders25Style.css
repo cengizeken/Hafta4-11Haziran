@@ -1,0 +1,29 @@
+:target{
+    background-color: red;
+    color: white;
+}
+
+/*akıllı seçiciler ve komut desenleri*
+/*
+[özellik^=değer]
+elementin başladığı karakter grubunu belirler
+[özellik$=değer] elementin bittiği karakter grubunu belirler
+[özellik*=değer] elementin bittiği karakter grubunu belirler
+
+*/
+p[id^="bas"]{
+    background-color: red;
+    color: white;
+}
+
+/*metin yazısının son kısmı olan ..tin(...in de olabilir)*/
+p[id$="tin"]{
+    background-color: green;
+    color: yellow;
+}
+
+/*src etiketi içerisinde ete geçen img yi hedefle*/
+img[src*="ete"]{
+    border: 5px double red;
+    border-radius: 10px 0px 0 0;
+}

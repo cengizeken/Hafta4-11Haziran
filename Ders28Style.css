@@ -1,0 +1,35 @@
+@keyframes animasyon{
+    0%{background-color: orange;}
+    25%{background-color: yellow;}
+    50%{background-color: blue;}
+    75%{background-color: greenyellow;}
+    100%{background-color: red;}
+}
+
+.kutu{
+    /*Animasyon Değerleri*/
+    animation-name: animasyon;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    /*Kutu Özellikleri*/
+    width: 150px;
+    height: auto;
+    position: relative;
+    padding: 10px;
+    background-color: orange;
+}
+div{
+    height: 65px;
+    position: relative;
+    animation:kosu-animasyon 10s;
+}
+.kutu1{animation-timing-function: linear;}
+.kutu2{animation-timing-function: ease;}
+.kutu3{animation-timing-function: ease;}
+.kutu4{animation-timing-function: ease-in;}
+.kutu5{animation-timing-function: ease-in-out;}
+
+@keyframes kosu-animasyon{
+    from{left: 0;}
+    to{left: 600px;}
+}

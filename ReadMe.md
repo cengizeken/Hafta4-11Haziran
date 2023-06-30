@@ -78,3 +78,9 @@ root->kök olan element hedef alınır. Kök hedef her zaman <body> etiketidir.
 :target{
     border: 1px solid black;
 }
+##Ders25
+Ders 25 ile ilgili html/css sayfası hazırlandı
+
+#Ders28 Animasyon Oluşturma
+
+##Ders30 Flexbox Model-2
